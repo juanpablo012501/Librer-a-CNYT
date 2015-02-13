@@ -80,7 +80,7 @@ GIT PUSH
 git push <origien> <branch>
 
 //subimos un tag\\
-git push --t 
+git push --tags
 
 --------
 GIT LOG
