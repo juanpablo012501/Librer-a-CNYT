@@ -1,212 +1,254 @@
 ## Configuracion Basica
 
-//Configurarar Nombre que salen en los commits\\
-git config --global user.name "daniel sanchez"
-//Configurar Email\\
-git config --global user.email dasdo1@gmail.com
-//marco de colores para los comandos\\
-git config --global color.ui true
+Configurar Nombre que salen en los commits
 
----------------------
-Iniciando repositorio
----------------------
+	git config --global user.name "daniel sanchez"
 
-//Iniciamos GIT en la carpeta donde esta el proyecto\\
-git init
-//Clonamos el repositorio de github o bitbucket\\
-git clone <url>
-//añadimos todos los archivos para el commit\\
-git add .
-//Hacemos el primer commit\\
-git commit -m "Texto que identifique por que se hizo el commit"
-//subimos al repositorio\\
-git push origin master
+Configurar Email
+	
+	git config --global user.email dasdo1@gmail.com
 
----------
-GIT CLONE
----------
+Marco de colores para los comandos
 
-//Clonamos el repositorio de github o bitbucket\\
-git clone <url>
-
-//Clonamos el repositorio de github o bitbucket ?????\\
-git clone <url> git-demo
-
--------
-GIT ADD
--------
-
-//añadimos todos los archivos para el commit\\
-git add .
-
-//añadimos el archivo para el commit\\
-git add <archivo>
-
-//añadimos todos los archivos para el commit omitiendo los nuevos\\
-git add --all 
-
-//añadimos todos los archivos con la extencion especificada\\
-git add *.txt
-
-//añadimos todos los archivos dentro de un directorio y de una extencion especifica\\
-git add docs/*.txt
-
-//añadimos todos los archivos dentro de un directorioa\\
-git add docs/
-
-----------
-GIT COMMIT
-----------
-
-//Cargar en el HEAD los cambios realizados\\
-git commit -m "Texto que identifique por que se hizo el commit"
-
-//agregar y Cargar en el HEAD los cambios realizadoss\\
-git commit -a -m "Texto que identifique por que se hizo el commit"
-
-//De haber conflictos los muestra\\
-git commit -a 
-
-//agregar al ultimo commit, este no se muestra como un nuevo commmit en los logs. Se puede especificar un nuevo mensaje\\
-git commit --amend -m "Texto que identifique por que se hizo el commit"
-
---------
-GIT PUSH
---------
-
-//subimos al repositorio\\
-git push <origien> <branch>
-
-//subimos un tag\\
-git push --tags
-
---------
-GIT LOG
---------
-
-//Muestra los logs de los commits\\
-git log
-
-//Muestras los cambios en los commits\\
-git log --oneline --stat
-
-//Muestra graficos de los commits\\
-git log --oneline --graph
-
---------
-GIT DIFF
---------
-//Muestra los cambios realizados a un archivo\\
-git diff
-
-git diff --staged
-
---------
-GIT HEAD
---------
-
-//saca un archivp del commit\\
-git reset HEAD <archivo>
-
-//Devuelve el ultimo commit que se hizo y pone los cambios en staging\\
-git reset --soft HEAD^
-
-//Devuelve el ultimo commit y todos los cambios\\
-git reset --hard HEAD^
-
-//Devuelve los 2 ultimo commit y todos los cambios\\
-git reset --hard HEAD^^
-
----------
-GIT REMOTE
----------
-
-//agregar repositorio remoto\\
-git remote add origin <url>
-
-//cambiar de remote\\
-git remote set-url origin <url>
-
-//Remover remositorio\\
-git remote rm <name/origin>
-
-//Muestra lista repositorios\\
-git remote -v
-
-//Muestra los branches remotos\\
-git remote show origin
-
-//Limpiar todos los branches eliminados\\
-git remote prune origin 
+	git config --global color.ui true
 
 
-----------
-GIT BRANCH
-----------
+## Iniciando repositorio
 
-//Crea un branch\\
-git branch <nameBranch>
+Iniciamos GIT en la carpeta donde esta el proyecto
 
-//Lista los branches\\
-git branch
+	git init
 
-//Comando -d elimina el branch y lo une al master\\
-git branch -d <nameBranch>
+Clonamos el repositorio de github o bitbucket
 
-//Elimina sin preguntar\\
-git branch -D <nameBranch>
+	git clone <url>
 
--------
-GIT TAG
--------
+Añadimos todos los archivos para el commit
 
-//Muestra una lista de todos los tags\\
-git tag
+	git add .
 
-//Crea un nuevo tags\\
-git tag -a <verison> - m "esta es la version x"
+Hacemos el primer commit
 
-----------
-GIT REBASE
-----------
+	git commit -m "Texto que identifique por que se hizo el commit"
 
-//Los rebase se usan cuando trabajamos con branches esto hace que los branches se pongan al dia con el master sin afectar al mismo\\
+subimos al repositorio
 
-//Une el branch actual con el mastar, esto no se puede ver como un merge\\
-git rebase
+	git push origin master
 
-//Cuando se produce un conflicto no das las siguientes opciones:\\
-//cuando resolvemos los conflictos --continue continua la secuencia del rebase donde se pauso\\
-git rebase --continue 
-//Omite el conflicto y sigue su camino\\
-git rebase --skip
-//Devueltodo al principio del rebase\\
-git reabse --abort
 
-//Para hacer un rebase a un branch en especifico\\
-git rebase <nameBranch>
+## GIT CLONE
 
---------------
-OTROS COMANDOS
---------------
 
-//Lista un estado actual del repositorio con lista de archivos modificados o agregados\\
-git status
+Clonamos el repositorio de github o bitbucket
 
-//Quita del HEAD un archivo y le pone el estado de no trabajado\\
-git checkout -- file
+	git clone <url>
 
-//Busca los cambios nuevos y actualiza el repositorio\\
-git pull origin <nameBranch>
+Clonamos el repositorio de github o bitbucket ?????
 
-//Cambiar de branch\\
-git checkout <nameBranch/tagname>
+	git clone <url> git-demo
 
-//Une el branch actual con el especificado\\
-git merge <nameBranch>
 
-//Verifica cambios en el repositorio online con el local\\
-git fetch
+## GIT ADD
 
-//Borrar un archivo del repositorio\\
-git rm <archivo> 
+
+Añadimos todos los archivos para el commit
+
+	git add .
+
+Añadimos el archivo para el commit
+
+	git add <archivo>
+
+Añadimos todos los archivos para el commit omitiendo los nuevos
+
+	git add --all 
+
+Añadimos todos los archivos con la extencion especificada
+
+	git add *.txt
+
+Añadimos todos los archivos dentro de un directorio y de una extencion especifica
+
+	git add docs/*.txt
+
+Añadimos todos los archivos dentro de un directorioa
+
+	git add docs/
+
+## GIT COMMIT
+
+
+Cargar en el HEAD los cambios realizados
+
+	git commit -m "Texto que identifique por que se hizo el commit"
+
+Agregar y Cargar en el HEAD los cambios realizadoss
+
+	git commit -a -m "Texto que identifique por que se hizo el commit"
+
+De haber conflictos los muestra
+
+	git commit -a 
+
+Agregar al ultimo commit, este no se muestra como un nuevo commmit en los logs. Se puede especificar un nuevo mensaje
+
+	git commit --amend -m "Texto que identifique por que se hizo el commit"
+
+## GIT PUSH
+
+Subimos al repositorio
+
+	git push <origien> <branch>
+
+Subimos un tag
+
+	git push --tags
+
+## GIT LOG
+
+Muestra los logs de los commits
+
+	git log
+
+Muestras los cambios en los commits
+
+	git log --oneline --stat
+
+Muestra graficos de los commits
+
+	git log --oneline --graph
+
+## GIT DIFF
+
+Muestra los cambios realizados a un archivo
+
+	git diff
+	git diff --staged
+
+## GIT HEAD
+
+Saca un archivp del commit
+
+	git reset HEAD <archivo>
+
+Devuelve el ultimo commit que se hizo y pone los cambios en staging
+
+	git reset --soft HEAD^
+
+Devuelve el ultimo commit y todos los cambios
+
+	git reset --hard HEAD^
+
+Devuelve los 2 ultimo commit y todos los cambios
+
+	git reset --hard HEAD^^
+
+## GIT REMOTE
+
+Agregar repositorio remoto
+
+	git remote add origin <url>
+
+Cambiar de remote
+
+	git remote set-url origin <url>
+
+Remover remositorio
+
+	git remote rm <name/origin>
+
+Muestra lista repositorios
+
+	git remote -v
+
+Muestra los branches remotos
+	
+	git remote show origin
+
+Limpiar todos los branches eliminados
+
+	git remote prune origin 
+
+## GIT BRANCH
+
+Crea un branch
+
+	git branch <nameBranch>
+
+Lista los branches
+
+	git branch
+
+Comando -d elimina el branch y lo une al master
+
+	git branch -d <nameBranch>
+
+Elimina sin preguntar
+
+	git branch -D <nameBranch>
+
+## GIT TAG
+
+Muestra una lista de todos los tags
+
+	git tag
+
+Crea un nuevo tags
+
+	git tag -a <verison> - m "esta es la version x"
+
+## GIT REBASE
+
+Los rebase se usan cuando trabajamos con branches esto hace que los branches se pongan al dia con el master sin afectar al mismo
+
+Une el branch actual con el mastar, esto no se puede ver como un merge
+
+	git rebase
+
+Cuando se produce un conflicto no das las siguientes opciones:
+
+cuando resolvemos los conflictos --continue continua la secuencia del rebase donde se pauso
+	
+	git rebase --continue 
+
+Omite el conflicto y sigue su camino
+
+	git rebase --skip
+
+Devueltodo al principio del rebase
+
+	git reabse --abort
+
+Para hacer un rebase a un branch en especifico
+	
+	git rebase <nameBranch>
+
+## OTROS COMANDOS
+
+Lista un estado actual del repositorio con lista de archivos modificados o agregados
+
+	git status
+
+Quita del HEAD un archivo y le pone el estado de no trabajado
+
+	git checkout -- file
+
+Busca los cambios nuevos y actualiza el repositorio
+
+	git pull origin <nameBranch>
+
+Cambiar de branch
+
+	git checkout <nameBranch/tagname>
+
+Une el branch actual con el especificado
+
+	git merge <nameBranch>
+
+Verifica cambios en el repositorio online con el local
+
+	git fetch
+
+Borrar un archivo del repositorio
+
+	git rm <archivo> 
