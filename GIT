@@ -123,8 +123,11 @@ git reset --hard HEAD^^
 GIT REMOTE
 ---------
 
-//Cambiar o usar otro repositorio\\
+//agregar repositorio remoto\\
 git remote add origin <url>
+
+//cambiar de remote\\
+git remote set-url origin <url>
 
 //Remover remositorio\\
 git remote rm <name/origin>
@@ -137,6 +140,7 @@ git remote show origin
 
 //Limpiar todos los branches eliminados\\
 git remote prune origin 
+
 
 ----------
 GIT BRANCH
