@@ -2,6 +2,7 @@
 
 Configurar Nombre que salen en los commits
 
+	```git
 	git config --global user.name "dasdo"
 
 Configurar Email
