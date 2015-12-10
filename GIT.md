@@ -142,6 +142,11 @@ Devuelve los 2 ultimo commit y todos los cambios
 
 	git reset --hard HEAD^^
 
+Rollback merge/commit
+
+	git log
+	git reset --hard <commit_sha>
+
 ## GIT REMOTE
 
 Agregar repositorio remoto
