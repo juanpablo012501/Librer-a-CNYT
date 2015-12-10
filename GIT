@@ -1,6 +1,4 @@
---------------------
-Configuracion Basica
---------------------
+## Configuracion Basica
 
 //Configurarar Nombre que salen en los commits\\
 git config --global user.name "daniel sanchez"
