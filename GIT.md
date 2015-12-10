@@ -1,14 +1,14 @@
-## Configuracion Basica
+## Configuración Básica
 
 Configurar Nombre que salen en los commits
 
-	git config --global user.name "daniel sanchez"
+	git config --global user.name "dasdo"
 
 Configurar Email
 	
 	git config --global user.email dasdo1@gmail.com
 
-Marco de colores para los comandos
+Marco de colores para los comando
 
 	git config --global color.ui true
 
@@ -63,26 +63,25 @@ Añadimos todos los archivos para el commit omitiendo los nuevos
 
 	git add --all 
 
-Añadimos todos los archivos con la extencion especificada
+Añadimos todos los archivos con la extensión especificada
 
 	git add *.txt
 
-Añadimos todos los archivos dentro de un directorio y de una extencion especifica
+Añadimos todos los archivos dentro de un directorio y de una extensión especifica
 
 	git add docs/*.txt
 
-Añadimos todos los archivos dentro de un directorioa
+Añadimos todos los archivos dentro de un directorios
 
 	git add docs/
 
 ## GIT COMMIT
 
-
 Cargar en el HEAD los cambios realizados
 
 	git commit -m "Texto que identifique por que se hizo el commit"
 
-Agregar y Cargar en el HEAD los cambios realizadoss
+Agregar y Cargar en el HEAD los cambios realizados
 
 	git commit -a -m "Texto que identifique por que se hizo el commit"
 
@@ -90,7 +89,7 @@ De haber conflictos los muestra
 
 	git commit -a 
 
-Agregar al ultimo commit, este no se muestra como un nuevo commmit en los logs. Se puede especificar un nuevo mensaje
+Agregar al ultimo commit, este no se muestra como un nuevo commit en los logs. Se puede especificar un nuevo mensaje
 
 	git commit --amend -m "Texto que identifique por que se hizo el commit"
 
@@ -127,7 +126,7 @@ Muestra los cambios realizados a un archivo
 
 ## GIT HEAD
 
-Saca un archivp del commit
+Saca un archivo del commit
 
 	git reset HEAD <archivo>
 
@@ -153,7 +152,7 @@ Cambiar de remote
 
 	git remote set-url origin <url>
 
-Remover remositorio
+Remover repositorio
 
 	git remote rm <name/origin>
 
@@ -195,11 +194,11 @@ Muestra una lista de todos los tags
 
 Crea un nuevo tags
 
-	git tag -a <verison> - m "esta es la version x"
+	git tag -a <verison> - m "esta es la versión x"
 
 ## GIT REBASE
 
-Los rebase se usan cuando trabajamos con branches esto hace que los branches se pongan al dia con el master sin afectar al mismo
+Los rebase se usan cuando trabajamos con branches esto hace que los branches se pongan al día con el master sin afectar al mismo
 
 Une el branch actual con el mastar, esto no se puede ver como un merge
 
@@ -215,7 +214,7 @@ Omite el conflicto y sigue su camino
 
 	git rebase --skip
 
-Devueltodo al principio del rebase
+Devuelve todo al principio del rebase
 
 	git reabse --abort
 
