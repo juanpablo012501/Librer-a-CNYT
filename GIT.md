@@ -235,7 +235,11 @@ Lista un estado actual del repositorio con lista de archivos modificados o agreg
 
 Quita del HEAD un archivo y le pone el estado de no trabajado
 
-	git checkout -- file
+	git checkout -- <file>
+
+Crea un branch en base a uno online
+
+	git checkout -b newlocalbranchname origin/branch-name
 
 Busca los cambios nuevos y actualiza el repositorio
 
