@@ -1,0 +1,46 @@
+import Sqrt as md
+import math
+from numpy import arctan
+def suma_numeros_complejos (a, b):
+    a_r = a[0] + b[0]
+    b_c = b + d
+    return (a_r, b_c)
+
+def producto_numeros_complejos (a, b, c, d):
+    a_rp = a*c + b*d
+    b_cp = a*d + c*b
+    return (a_rp, b_cp)
+
+def resta_numeros_complejos (a, b, c, d):
+    a_rr = a - c
+    b_cr = b - d
+    return (a_rr, b_cr)
+
+def division_numeros_complejos (a, b, c, d):
+    a_rd = (a*c + b*d)/(c^2 + c^2)
+    b_cd = (c*b - a*d)/(c^2 + c^2)
+    return (a_rd, b_cd)
+
+def modulo_numero_complejo (a, b):
+    md = math.sqrt(a^2 + b^2)
+    return md
+
+def conjugado_numero_complejo (a, b):
+    b_cc = -b
+    a_rc = a
+    return (a_rc, b_cc)
+
+def conversion_pares_polar (a, b):
+    ro = modulo_numero_complejo (a, b)
+    ang = arctan(b/a)
+    return (ro, ang)
+
+def conversion_polar_pares (ro, ang):
+    a = ro*math.cos(ang)
+    b = ro*math.sen(ang)
+    return (a,b)
+
+if __name__ == "__main__":
+    print(suma_numeros_complejos((2,3),(4,5)))
+
+main()
