@@ -1,4 +1,4 @@
-# LibreríaoOperaciones sobre números complejos
+# Librería Operaciones sobre números complejos
 La siguiente librería tendra una serie de funciones las cuales se encargaran de
 llevar a cabo operaciones sobre números complejos.
 
