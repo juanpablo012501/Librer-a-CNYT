@@ -3,44 +3,51 @@ import math
 from numpy import arctan
 def suma_numeros_complejos (a, b):
     a_r = a[0] + b[0]
-    b_c = b + d
+    b_c = a[1] + b[1]
     return (a_r, b_c)
 
-def producto_numeros_complejos (a, b, c, d):
-    a_rp = a*c + b*d
-    b_cp = a*d + c*b
+def producto_numeros_complejos (a, b):
+    a_rp = a[0]*b[0] + a[1]*b[1]
+    b_cp = a[0]*b[1] + b[0]*a[1]
     return (a_rp, b_cp)
 
-def resta_numeros_complejos (a, b, c, d):
-    a_rr = a - c
-    b_cr = b - d
+def resta_numeros_complejos (a, b):
+    a_rr = a[0] - b[0]
+    b_cr = a[1] - b[1]
     return (a_rr, b_cr)
 
 def division_numeros_complejos (a, b, c, d):
-    a_rd = (a*c + b*d)/(c^2 + c^2)
-    b_cd = (c*b - a*d)/(c^2 + c^2)
+    a_rd = (a[0]*b[0] + a[1]*b[1])/(b[0]^2 + b[1]^2)
+    b_cd = (b[0]*a[1] - a[0]*b[1])/(b[0]^2 + b[1]^2)
     return (a_rd, b_cd)
 
-def modulo_numero_complejo (a, b):
-    md = math.sqrt(a^2 + b^2)
+def modulo_numero_complejo (a):
+    md = math.sqrt(a[0]^2 + a[1]^2)
     return md
 
 def conjugado_numero_complejo (a, b):
-    b_cc = -b
-    a_rc = a
+    b_cc = -a[1]
+    a_rc = a[0]
     return (a_rc, b_cc)
 
-def conversion_pares_polar (a, b):
-    ro = modulo_numero_complejo (a, b)
-    ang = arctan(b/a)
+def conversion_pares_polar (a):
+    ro = modulo_numero_complejo (a[0], a[1])
+    ang = arctan(a[1]/a[0])
     return (ro, ang)
 
-def conversion_polar_pares (ro, ang):
-    a = ro*math.cos(ang)
-    b = ro*math.sen(ang)
+def conversion_polar_pares (m):
+    a = m[0]*math.cos(m[1])
+    b = m[0]*math.sen(m[1])
     return (a,b)
 
 if __name__ == "__main__":
     print(suma_numeros_complejos((2,3),(4,5)))
+    print(producto_numeros_complejos((2,3),(4,5)))
+    print(resta_numeros_complejos((2,3),(4,5)))
+    print(division_numeros_complejos((2,3),(4,5)))
+    print(modulo_numero_complejo((2,3)))
+    print(conjugado_numero_complejo((4,5)))
+    print(conversion_pares_polar((2,3)))
+    print(conversion_polar_pares((6.4,0.89)))
 
 main()
