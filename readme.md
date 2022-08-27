@@ -1,4 +1,6 @@
-#Su nigger momma
+# Librería Operaciones sobre Números Complejos
+La siguiente librería tendra una serie de funciones las cuales se encargaran de
+llevar a cabo operaciones sobre números complejos
 ## _The Last Markdown Editor, Ever_
 
 
