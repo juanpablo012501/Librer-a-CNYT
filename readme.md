@@ -1,24 +1,18 @@
-# Librería Operaciones sobre Números Complejos
+# LibreríaoOperaciones sobre números complejos
 La siguiente librería tendra una serie de funciones las cuales se encargaran de
-llevar a cabo operaciones sobre números complejos
-## _The Last Markdown Editor, Ever_
+llevar a cabo operaciones sobre números complejos.
 
+## Prerequisitos
+Para poder hacer uso de estas funciones es solo necesario descargar la librería y llamarla
+cuando lo considere necesario en sus trabajos.
 
-Dillinger is a cloud-enabled, mobile-ready, offline-storage compatible,
-AngularJS-powered HTML5 Markdown editor.
+## Examen de prueba
+Al final del código se hace un llamado en general de cada función con entradas arbitrarias
+para probar y poder corroborar que cumplan sus objetivos.
 
-- Type some Markdown on the left
-- See HTML in the right
-- ✨Magic ✨
+## Estilo de programación
+Se programo de esta manera, por la sencilles de las operaciones que lleva a cabo cada función.
 
-## Features
+## Autor
+Juan Pablo Vélez Muñoz.
 
-- Import a HTML file and watch it magically convert to Markdown
-- Drag and drop images (requires your Dropbox account be linked)
-- Import and save files from GitHub, Dropbox, Google Drive and One Drive
-- Drag and drop markdown and HTML files into Dillinger
-- Export documents as Markdown, HTML and PDF
-
-Markdown is a lightweight markup language based on the formatting conventions
-that people naturally use in email.
-As [John Gruber] writes on the [Markdown site][df1]
